@@ -61,6 +61,9 @@
                                 </div>
                             </div>
                         @empty
+                        <div class="col-md-12">
+                            <h3 class="text-center">Tidak ada Product</h3>
+                        </div>
                         @endforelse
                         {{-- end proses looping product --}}
                     </div>
