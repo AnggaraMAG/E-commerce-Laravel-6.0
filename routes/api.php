@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('city', 'Ecommerce\CartController@getCity'); //route api untuk city
+Route::get('district', 'Ecommerce\CartController@getDistrict');//route api untuk district

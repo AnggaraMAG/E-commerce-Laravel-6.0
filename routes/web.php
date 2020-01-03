@@ -15,6 +15,11 @@ Route::get('/', 'Ecommerce\FrontController@index')->name('front.index');
 Route::get('/product', 'Ecommerce\FrontController@product')->name('front.product');
 Route::get('/category/{slug}', 'Ecommerce\FrontController@categoryProduct')->name('front.category');
 Route::get('/product/{slug}', 'Ecommerce\FrontController@show')->name('front.show_product');
+Route::post('cart', 'Ecommerce\CartController@addToCart')->name('front.cart');
+Route::get('/cart', 'Ecommerce\CartController@listCart')->name('front.list.cart');
+Route::post('/cart/update', 'Ecommerce\CartController@updateCart')->name('front.update.cart');
+Route::get('/checkout', 'Ecommerce\CartController@checkout')->name('front.checkout');
+Route::post('/checkout', 'Ecommerce\CartController@processCheckout')->name('front.store_checkout');
 
 Auth::routes();
 

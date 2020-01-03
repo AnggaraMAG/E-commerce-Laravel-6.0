@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="{{ asset('ecommerce/vendors/nice-select/css/nice-select.css') }}">
 	<link rel="stylesheet" href="{{ asset('ecommerce/vendors/animate-css/animate.css') }}">
 	<link rel="stylesheet" href="{{ asset('ecommerce/vendors/jquery-ui/jquery-ui.css') }}">
-
 	<link rel="stylesheet" href="{{ asset('ecommerce/css/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('ecommerce/css/responsive.css') }}">
 </head>
@@ -78,7 +77,7 @@
 									</li>
 									<hr>
 									<li class="nav-item">
-										<a href="#" class="icons">
+										<a href="{{route('front.list.cart')}}" class="icons">
 											<i class="lnr lnr lnr-cart"></i>
 										</a>
 									</li>
@@ -228,7 +227,6 @@
 	<script src="{{ asset('ecommerce/vendors/counter-up/jquery.counterup.js') }}"></script>
 	<script src="{{ asset('ecommerce/js/mail-script.js') }}"></script>
 	<script src="{{ asset('ecommerce/js/theme.js') }}"></script>
-
 	@yield('js')
 </body>
 </html>

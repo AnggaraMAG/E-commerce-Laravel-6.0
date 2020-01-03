@@ -6,7 +6,7 @@
         <a href="{{route('front.product')}}" class="nav-link">product</a>
     </li>
     <li class="nav-item submenu dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+        <a href="#" class="nav-link dropdown-toggle{{Request::is('login') ? 'active' : ''}}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
             <ul class="dropdown-menu">
                 <li class="nav-item">
                     <a href="category.html" class="nav-link">Shop Category</a>

@@ -38,7 +38,7 @@
                             </select>
                         </div>
                         <div class="right_page ml-auto">
-                            {{$products->links()}}
+                            {!!$products->links()!!}
                         </div>
                     </div>
                     <div class="latest_product_inner row">
@@ -97,8 +97,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                {{$products->links()}}
+            <div class="row my-4">
+                {!!$products->links()!!}
             </div>
         </div>
     </section>
